@@ -1,0 +1,3 @@
+[submodule "tex/rmss_style"]
+	path = tex/rmss_style
+	url = git@github.com:nagae/rmss_style.git
