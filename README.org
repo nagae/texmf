@@ -5,16 +5,13 @@
 
 - github から最新版の =texmf= フォルダを取得
   #+BEGIN_SRC sh
-  cd ~/Dropbox
-  git clone git@github.com:nagae/texmf
-  #+END_SRC
-- 各サブモジュールを最新のものに更新
-  #+BEGIN_SRC sh
-    cd ~/Dropbox/texmf              # texmf フォルダに移動
+    cd ~/Dropbox
+    git clone git@github.com:nagae/texmf # texmf フォルダをクローン
+    cd texmf                        # texmf フォルダに移動
     git submodule init              # サブモジュールの初期化
     git submodule update            # サブモジュールの最新版を取得
   #+END_SRC
-- 最新版の取得
+- 最新版は以下の方法で取得できる．
   #+BEGIN_SRC sh
     cd ~/Dropbox/texmf              # texmf フォルダに移動
     git pull                        # texmf フォルダ本体をプル
