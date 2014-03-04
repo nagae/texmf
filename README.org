@@ -1,0 +1,28 @@
+* 使い方
+** 長江研標準の TeX ライブラリに追加する場合
+長江研ではユーザー個別の TeX ライブラリの置き場 =TEXMFHOME= として
+=~/Dropbox/texmf/tex= を用いる．
+
+- github から最新版の =texmf= フォルダを取得
+  #+BEGIN_SRC sh
+  cd ~/Dropbox
+  git clone git@github.com:nagae/texmf
+  #+END_SRC
+- 各サブモジュールを最新のものに更新
+  #+BEGIN_SRC sh
+    cd ~/Dropbox/texmf              # texmf フォルダに移動
+    git submodule init              # サブモジュールの初期化
+    git submodule update            # サブモジュールの最新版を取得
+  #+END_SRC
+- 最新版の取得
+  #+BEGIN_SRC sh
+    cd ~/Dropbox/texmf              # texmf フォルダに移動
+    git pull                        # texmf フォルダ本体をプル
+    git submodule foreach 'git pull origin master' # 各サブモジュールで master ブランチをプル
+  #+END_SRC
+  
+** LaTeX などの =git= のサブモジュールとして取り込む場合
+- メインのフォルダに移動し，以下を入力：
+  #+BEGIN_SRC sh
+  git submodule add git@github.com:nagae/rmss_style.git texmf
+  #+END_SRC

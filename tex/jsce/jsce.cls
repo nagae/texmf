@@ -9,7 +9,7 @@ LaTeX2e Class File for Japan Society of Cilvil Engineers
 }
 %
 
-%\NeedsTeXFormat{pLaTeX2e}
+\NeedsTeXFormat{pLaTeX2e}
 \ProvidesClass{jsce}
 %%  [2002/09/30 v1 Standard pLaTeX class]
 %%  [2003/05/09 v1.1 Standard pLaTeX class]
@@ -113,7 +113,7 @@ LaTeX2e Class File for Japan Society of Cilvil Engineers
   \@bannertoken\@empty
   \maketombowbox}
 \DeclareOption{tate}{%
-  \AtBeginDocument{\tate\message{$B!T=DAH%b!<%I!U(B}%
+  \AtBeginDocument{\tate\message{ÅsècëgÉÇÅ[ÉhÅt}%
                    \adjustbaseline}%
 }
 \DeclareOption{oneside}{\@twosidefalse}
@@ -1096,43 +1096,43 @@ LaTeX2e Class File for Japan Society of Cilvil Engineers
   \kern 2.6\p@}
 \newcommand\@makefntext[1]{\parindent 1em
   \noindent\hbox to 1.8em{\hss\@makefnmark}#1}
-\newif\if$B@>Nq(B \$B@>Nq(Bfalse
-\def\$B@>Nq(B{\$B@>Nq(Btrue}
-\def\$BOBNq(B{\$B@>Nq(Bfalse}
+\newif\ifêºóÔ \êºóÔfalse
+\def\êºóÔ{\êºóÔtrue}
+\def\òaóÔ{\êºóÔfalse}
 \newcount\heisei \heisei\year \advance\heisei-1988\relax
 \def\today{{%
   \iftdir
-    \if$B@>Nq(B
-      \kansuji\number\year $BG/(B
-      \kansuji\number\month $B7n(B
-      \kansuji\number\day $BF|(B
+    \ifêºóÔ
+      \kansuji\number\year îN
+      \kansuji\number\month åé
+      \kansuji\number\day ì˙
     \else
-      $BJ?@.(B\ifnum\heisei=1 $B85G/(B\else\kansuji\number\heisei $BG/(B\fi
-      \kansuji\number\month $B7n(B
-      \kansuji\number\day $BF|(B
+      ïΩê¨\ifnum\heisei=1 å≥îN\else\kansuji\number\heisei îN\fi
+      \kansuji\number\month åé
+      \kansuji\number\day ì˙
     \fi
   \else
-    \if$B@>Nq(B
-      \number\year~$BG/(B
-      \number\month~$B7n(B
-      \number\day~$BF|(B
+    \ifêºóÔ
+      \number\year~îN
+      \number\month~åé
+      \number\day~ì˙
     \else
-      $BJ?@.(B\ifnum\heisei=1 $B85G/(B\else\number\heisei~$BG/(B\fi
-      \number\month~$B7n(B
-      \number\day~$BF|(B
+      ïΩê¨\ifnum\heisei=1 å≥îN\else\number\heisei~îN\fi
+      \number\month~åé
+      \number\day~ì˙
     \fi
   \fi}}
-\newcommand{\prepartname}{$BBh(B}
-\newcommand{\postpartname}{$BIt(B}
-\newcommand{\contentsname}{$BL\(B $B<!(B}
-\newcommand{\listfigurename}{$B?^(B $BL\(B $B<!(B}
-\newcommand{\listtablename}{$BI=(B $BL\(B $B<!(B}
-\newcommand{\refname}{$B;29MJ88%(B}
-\newcommand{\indexname}{$B:w(B $B0z(B}
-\newcommand{\figurename}{$B?^(B}
-\newcommand{\tablename}{$BI=(B}
-\newcommand{\appendixname}{$BIU(B $BO?(B}
-\newcommand{\abstractname}{$B35(B $BMW(B}
+\newcommand{\prepartname}{ëÊ}
+\newcommand{\postpartname}{ïî}
+\newcommand{\contentsname}{ñ⁄ éü}
+\newcommand{\listfigurename}{ê} ñ⁄ éü}
+\newcommand{\listtablename}{ï\ ñ⁄ éü}
+\newcommand{\refname}{éQçlï∂å£}
+\newcommand{\indexname}{çı à¯}
+\newcommand{\figurename}{ê}}
+\newcommand{\tablename}{ï\}
+\newcommand{\appendixname}{ït ò^}
+\newcommand{\abstractname}{äT óv}
 
 
 
@@ -1165,10 +1165,10 @@ LaTeX2e Class File for Japan Society of Cilvil Engineers
   \setlength\paperheight {210mm}
   \setlength\paperwidth  {148mm}
 
-%% $BE7CO:81&Cf1{(B
-%\evensidemargin=-8.375mm%-25.375mm%    $B>.8}(B 17mm
+%% ìVínç∂âEíÜâõ
+%\evensidemargin=-8.375mm%-25.375mm%    è¨å˚ 17mm
 %\oddsidemargin=-8.375mm%-15mm%-7mm%   
-%\topmargin=-11.75mm%          $BE7(B 21mm
+%\topmargin=-11.75mm%          ìV 21mm
 
 
 
@@ -1286,7 +1286,7 @@ LaTeX2e Class File for Japan Society of Cilvil Engineers
 
 %% jsce-man.tex 
 %% \def\CL{\hbox{\xpt\raisebox{.2ex}[0pt][0pt]{{\sc c}}\kern-1.4ex{\xipt\sl L}}}
-%% c L $B$r=E$M$k5-9f$N%U%)%s%H%5%$%:!'$&$^$/$$$+$J$$!*(B
+%% c L ÇèdÇÀÇÈãLçÜÇÃÉtÉHÉìÉgÉTÉCÉYÅFÇ§Ç‹Ç≠Ç¢Ç©Ç»Ç¢ÅI
 \font\xpt=cmr10 at 10pt
 \font\xipt=cmr10 at 11pt
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1343,30 +1343,30 @@ LaTeX2e Class File for Japan Society of Cilvil Engineers
 
 
 %
-%\def\figurename{$B?^(B\mbox{}--}
-%\def\tablename{$BI=(B\mbox{}--}
-%\def\photoname{$B<L??(B\mbox{}--}
-%\def\figuresname{$B?^(B\mbox{}--}
-%\def\tablesname{$BI=(B\mbox{}--}
-%\def\photosname{$B<L??(B\mbox{}--}
-%\def\@receivename{\ $B<uIU(B}
-%\def\appendixname{$BIUO?(B}
+%\def\figurename{ê}\mbox{}--}
+%\def\tablename{ï\\mbox{}--}
+%\def\photoname{é ê^\mbox{}--}
+%\def\figuresname{ê}\mbox{}--}
+%\def\tablesname{ï\\mbox{}--}
+%\def\photosname{é ê^\mbox{}--}
+%\def\@receivename{\ éÛït}
+%\def\appendixname{ïtò^}
 %\def\appendixsectionname{\Roman{section}}
-%\def\refname{$B;29MJ88%(B}
+%\def\refname{éQçlï∂å£}
 
 
-\renewcommand{\figurename}{$B?^(B\nobreak--}
-\renewcommand{\tablename}{$BI=(B\nobreak--}
-\newcommand{\photoname}{$B<L??(B\nobreak--}
+\renewcommand{\figurename}{ê}\nobreak--}
+\renewcommand{\tablename}{ï\\nobreak--}
+\newcommand{\photoname}{é ê^\nobreak--}
 
-\newcommand{\figuresname}{$B?^(B\nobreak--}
-\newcommand{\tablesname}{$BI=(B\nobreak--}
-\newcommand{\photosname}{$B<L??(B\nobreak--}
+\newcommand{\figuresname}{ê}\nobreak--}
+\newcommand{\tablesname}{ï\\nobreak--}
+\newcommand{\photosname}{é ê^\nobreak--}
 
-\newcommand{\@receivename}{\ $B<uIU(B}
-\renewcommand{\appendixname}{$BIUO?(B}
+\newcommand{\@receivename}{\ éÛït}
+\renewcommand{\appendixname}{ïtò^}
 \newcommand{\appendixsectionname}{\Roman{section}}
-\renewcommand{\refname}{$B;29MJ88%(B}
+\renewcommand{\refname}{éQçlï∂å£}
 
 
 %
@@ -1508,7 +1508,7 @@ LaTeX2e Class File for Japan Society of Cilvil Engineers
 %%     \@fromenglishpage{s}---\@toenglishpage{s}, \@year~\@englishmonth
 %     \@fromenglishpage---\@toenglishpage, \@year~\@englishmonth%CHANGED
 %  \else
-%   $BEZLZ3X2qO@J8=8(B No.\@numberofpub/\@fieldnumber--\@numberoffieldnumber,
+%   ìyñÿäwâÔò_ï∂èW No.\@numberofpub/\@fieldnumber--\@numberoffieldnumber,
 %   pp.\@frompage--\@topage, \@year.\@month
 %  \fi}\def\@oddfoot{\reset@font\xpt\rm\hfil\thepage
 %%   \ifEN@LISH%
@@ -1548,7 +1548,7 @@ LaTeX2e Class File for Japan Society of Cilvil Engineers
    No.\@numberofjournal, %
      \@fromenglishpage---\@toenglishpage, \@year~\@englishmonth%CHANGED
   \else
-   $BEZLZ3X2qO@J8=8(B No.\@numberofpub/\@fieldnumber--\@numberoffieldnumber,
+   ìyñÿäwâÔò_ï∂èW No.\@numberofpub/\@fieldnumber--\@numberoffieldnumber,
    pp.\@frompage--\@topage, \@year.\@month
   \fi\@Rtop}%
 \def\@evenhead{\@Ltop\hfil\@Rtop}%
@@ -1618,7 +1618,7 @@ LaTeX2e Class File for Japan Society of Cilvil Engineers
    \ifEN@LISH\vskip 7mm\else\vskip 4mm\fi % cheating
 %                                                                title
    \begin{ctrindent}{10mm}{10mm}%
-    {\ifEN@LISH\LARGE\else\huge\fi\bf \lineskip .5em \mdseries \gtfamily \@title \par}%
+    {\ifEN@LISH\LARGE\else\huge\fi\bf \lineskip .5em \@title \par}%
    \end{ctrindent} \vskip 12mm % cheating
 %                                                               author
    \begin{ctrindent}{10mm}{10mm}%
@@ -1627,7 +1627,7 @@ LaTeX2e Class File for Japan Society of Cilvil Engineers
 %
    \setcounter{footnote}{0}%
 %    {\footnotesize\baselineskip3.5mm \@thanks}% original
-    {\footnotesize\baselineskip3.5mm \@thanks}% $B9T4V>/$769$$$N$GD4@0(B v1.2
+    {\footnotesize\baselineskip3.5mm \@thanks}% çsä‘è≠Çµã∑Ç¢ÇÃÇ≈í≤êÆ v1.2
    \end{ctrindent}
 %
   \vskip 9mm % cheating
@@ -1669,12 +1669,12 @@ LaTeX2e Class File for Japan Society of Cilvil Engineers
 
 
 \def\@Mfor#1:=#2\do#3{\edef\@fortmp{#2}\ifx\@fortmp\@empty \else
-    \expandafter\@Mforloop#2$B!&(B\@nil$B!&(B\@nil\@@#1{#3}\fi}
+    \expandafter\@Mforloop#2ÅE\@nilÅE\@nil\@@#1{#3}\fi}
 
-\def\@Mforloop#1$B!&(B#2$B!&(B#3\@@#4#5{\def#4{#1}\ifx #4\@nnil \else
+\def\@Mforloop#1ÅE#2ÅE#3\@@#4#5{\def#4{#1}\ifx #4\@nnil \else
        #5\def#4{#2}\ifx #4\@nnil \else#5\@Miforloop #3\@@#4{#5}\fi\fi}
 
-\def\@Miforloop#1$B!&(B#2\@@#3#4{\def#3{#1}\ifx #3\@nnil 
+\def\@Miforloop#1ÅE#2\@@#3#4{\def#3{#1}\ifx #3\@nnil 
        \let\@nextwhile=\@fornoop \else
       #4\relax\let\@nextwhile=\@Miforloop\fi\@nextwhile#2\@@#3{#4}}
 
@@ -1697,7 +1697,7 @@ LaTeX2e Class File for Japan Society of Cilvil Engineers
  \ifnum\c@choshai<1\relax \expandafter\Guest\member
 \else
 \ifnum\c@choshai<2\relax \member\space
-\else \expandafter\Guest\member\makebox[1zw]{$B!&(B}%
+\else \expandafter\Guest\member\makebox[1zw]{ÅE}%
 %
 \fi\fi
 \else
@@ -1705,13 +1705,13 @@ LaTeX2e Class File for Japan Society of Cilvil Engineers
 \ifnum\thechoshaii >1
 %
 \ifnum\c@choshaii=\c@choshai 
-\expandafter\Guest\member\makebox[1zw]{$B!&(B}%\space and
+\expandafter\Guest\member\makebox[1zw]{ÅE}%\space and
 \else 
 \expandafter\Guest\member%
 \fi
 \else%%%%%%%%%%
 \ifnum\c@choshaii=\c@choshai 
-\expandafter\Guest\member\makebox[1zw]{$B!&(B}%\space and
+\expandafter\Guest\member\makebox[1zw]{ÅE}%\space and
 \else 
 \expandafter\Guest\member%
 \fi
@@ -1720,12 +1720,12 @@ LaTeX2e Class File for Japan Society of Cilvil Engineers
 \fi
 }}
 
-%%% \long $B$rIU$1$?(B
+%%% \long ÇïtÇØÇΩ
 %\long\def\thanks#1{\footnotemark\begingroup
 %\def\protect{\noexpand\protect\noexpand}\xdef\@thanks{\@thanks
 %  \protect\footnotemark#1\protect\par}\endgroup\ignorespaces}
 
-%%% email$BBP1~(B $B5Z$S:#8e(Burl$B$rM=B,$7$F(B ~$B$N@)8f(B
+%%% emailëŒâû ãyÇ—ç°å„urlÇó\ë™ÇµÇƒ ~ÇÃêßå‰
 \long\def\thanks#1{{\def~{\noexpand~}\footnotemark\begingroup
 \def\protect{\noexpand\protect\noexpand}\xdef\@thanks{\@thanks
   \protect\footnotemark#1\protect\par}\endgroup}\ignorespaces}
@@ -1895,7 +1895,7 @@ LaTeX2e Class File for Japan Society of Cilvil Engineers
 \protect\hangindent=16.5pt\hangafter1%
 #1}
 
-%% $B$3$3$^$G(B
+%% Ç±Ç±Ç‹Ç≈
 
 %
 % MATH
@@ -2081,7 +2081,7 @@ $$\halign to\displaywidth\bgroup\@eqnsel\hskip\@centering
   \fi%
 \vskip\belowcaptionskip
 }
-% $B$3$3$+$i(B
+% Ç±Ç±Ç©ÇÁ
 \long\def\@caption#1[#2]#3{\par\addcontentsline{\csname
   ext@#1\endcsname}{#1}{\protect\numberline{\csname
   the#1\endcsname}{\ignorespaces #2}}\begingroup
@@ -2278,8 +2278,8 @@ $$\halign to\displaywidth\bgroup\@eqnsel\hskip\@centering
 %
 % ENCIRCLED numerals by Hideki ISOZAKI
 %
-%\def\MARU#1{{\ooalign
-%  {\hfill$\scriptstyle#1$\hfill\crcr$\bigcirc$}}}
+\def\MARU#1{{\ooalign
+  {\hfill$\scriptstyle#1$\hfill\crcr$\bigcirc$}}}
 %
 % LIST environment
 %  make sep's small
@@ -2340,7 +2340,7 @@ $$\halign to\displaywidth\bgroup\@eqnsel\hskip\@centering
 %
 %%%% end define
 %%%% SANBI define
-%% \begin{center}...\end{center} $B>e2<%9%Z!<%9$rKI$0(B
+%% \begin{center}...\end{center} è„â∫ÉXÉyÅ[ÉXÇñhÇÆ
 \def\Center{\topsep\z@\parsep\z@\partopsep\z@\itemsep\z@
  \trivlist \centering\item\relax}
 \def\endCenter{\endtrivlist}
@@ -2352,7 +2352,7 @@ $$\halign to\displaywidth\bgroup\@eqnsel\hskip\@centering
 }
 \end{Center}%
 %    \vskip .5ex%
-\vskip13pt%%% $B9T4V(B 22pt \large = xiipt bs 17pt
+\vskip13pt%%% çsä‘ 22pt \large = xiipt bs 17pt
 %   \vspace*{-7pt}
 \begin{Center} 
 {\normalsize\lineskip .5em \nonfrenchspacing\@endauthor\endgraf}%
@@ -2364,7 +2364,7 @@ $$\halign to\displaywidth\bgroup\@eqnsel\hskip\@centering
 %     \small
 \ifEN@LISH\small\baselineskip=13.7pt%
            \else \small\baselineskip=10pt \fi
-%%     \ignorespaces\hspace*{\parindent}\ignorespaces%% by Mr.Iwakuma?? $B#19TL\$N%$%s%G%s%H$,$5$,$j$9$.$k(B
+%%     \ignorespaces\hspace*{\parindent}\ignorespaces%% by Mr.Iwakuma?? ÇPçsñ⁄ÇÃÉCÉìÉfÉìÉgÇ™Ç≥Ç™ÇËÇ∑Ç¨ÇÈ
      \ignorespaces%\hspace*{\parindent}\ignorespaces%% by SANBI
                  {\nonfrenchspacing\@endabstract}\endgraf%
   \end{minipage}}}%
